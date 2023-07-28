@@ -19,3 +19,5 @@ const lengthOfLongestSubstring = (s) => {
     }
     return maxLength
 }
+
+module.exports = lengthOfLongestSubstring
