@@ -2,9 +2,11 @@
 const twoSum = require('./twoSum.js') // 1. Two Sum
 const addTwoNumbers = require('./addTwoNumbers.js') // 2. Add Two Numbers
 const lengthOfLongestSubstring = require('./lengthOfLongestSubstring.js') // 3. Longest Substring Without Repeating Characters
+const findMedianSortedArrays = require('./findMedianSortedArrays') // 4. Median of Two Sorted Arrays
 
 module.exports = {
     twoSum,
     addTwoNumbers,
-    lengthOfLongestSubstring
+    lengthOfLongestSubstring,
+    findMedianSortedArrays
 }
