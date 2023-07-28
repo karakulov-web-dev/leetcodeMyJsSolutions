@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "rules": {
+    // Add rules here
+  },
+  "env": {
+    "es6": true
+  }
+}

@@ -1,0 +1,1 @@
+// require('./index${leetcode question number}.js')

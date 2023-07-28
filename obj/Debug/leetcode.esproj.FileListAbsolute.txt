@@ -1,0 +1,2 @@
+C:\Users\user\Documents\leetcode\leetcode\leetcode\obj\Debug\leetcode.esproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\leetcode\leetcode\leetcode\obj\Debug\leetcode.esproj.CoreCompileInputs.cache
