@@ -6,6 +6,7 @@ const findMedianSortedArrays = require('./findMedianSortedArrays') // 4. Median 
 const longestPalindrome = require('./longestPalindrome.js') // 5. Longest Palindromic Substring
 const zigzagConversion = require('./zigzagConversion.js') // 6. Zigzag Conversion
 const reverseInteger = require('./reverseInteger.js') // 7. Reverse Integer
+const myAtoi = require('./myAtoi.js') // 8. String to Integer (atoi)
 
 module.exports = {
     twoSum,
@@ -14,5 +15,6 @@ module.exports = {
     findMedianSortedArrays,
     longestPalindrome,
     zigzagConversion,
-    reverseInteger
+    reverseInteger,
+    myAtoi
 }
