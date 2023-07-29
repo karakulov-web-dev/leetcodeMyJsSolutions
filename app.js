@@ -11,6 +11,7 @@ const isPalindrome = require('./isPalindrome.js') // 9. Palindrome Number
 const isMatch = require('./isMatch.js') // *** 10. Regular Expression Matching - Пока не решена ***
 const maxArea = require('./maxArea.js') // 11. Container With Most Water
 const intToRoman = require('./intToRoman.js') // 12. Integer to Roman
+const romanToInt = require('./romanToInt.js') // 13. Roman to Integer
 
 module.exports = {
     twoSum,
@@ -24,6 +25,6 @@ module.exports = {
     isPalindrome,
     isMatch,
     maxArea,
-    intToRoman
+    intToRoman,
+    romanToInt
 }
-
