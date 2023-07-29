@@ -7,6 +7,7 @@ const longestPalindrome = require('./longestPalindrome.js') // 5. Longest Palind
 const zigzagConversion = require('./zigzagConversion.js') // 6. Zigzag Conversion
 const reverseInteger = require('./reverseInteger.js') // 7. Reverse Integer
 const myAtoi = require('./myAtoi.js') // 8. String to Integer (atoi)
+const isPalindrome = require('./isPalindrome.js') // 9. Palindrome Number
 
 module.exports = {
     twoSum,
@@ -16,5 +17,6 @@ module.exports = {
     longestPalindrome,
     zigzagConversion,
     reverseInteger,
-    myAtoi
+    myAtoi,
+    isPalindrome
 }
