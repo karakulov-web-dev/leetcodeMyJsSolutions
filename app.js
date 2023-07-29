@@ -5,6 +5,7 @@ const lengthOfLongestSubstring = require('./lengthOfLongestSubstring.js') // 3. 
 const findMedianSortedArrays = require('./findMedianSortedArrays') // 4. Median of Two Sorted Arrays
 const longestPalindrome = require('./longestPalindrome.js') // 5. Longest Palindromic Substring
 const zigzagConversion = require('./zigzagConversion.js') // 6. Zigzag Conversion
+const reverseInteger = require('./reverseInteger.js') // 7. Reverse Integer
 
 module.exports = {
     twoSum,
@@ -12,5 +13,6 @@ module.exports = {
     lengthOfLongestSubstring,
     findMedianSortedArrays,
     longestPalindrome,
-    zigzagConversion
+    zigzagConversion,
+    reverseInteger
 }
