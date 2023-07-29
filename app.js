@@ -8,6 +8,8 @@ const zigzagConversion = require('./zigzagConversion.js') // 6. Zigzag Conversio
 const reverseInteger = require('./reverseInteger.js') // 7. Reverse Integer
 const myAtoi = require('./myAtoi.js') // 8. String to Integer (atoi)
 const isPalindrome = require('./isPalindrome.js') // 9. Palindrome Number
+const isMatch = require('./isMatch.js') // *** 10. Regular Expression Matching - Пока не решена ***
+const maxArea = require('./maxArea.js') // 11. Container With Most Water
 
 module.exports = {
     twoSum,
@@ -18,5 +20,8 @@ module.exports = {
     zigzagConversion,
     reverseInteger,
     myAtoi,
-    isPalindrome
+    isPalindrome,
+    isMatch,
+    maxArea
 }
+
