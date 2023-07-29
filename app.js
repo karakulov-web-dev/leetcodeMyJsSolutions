@@ -12,6 +12,7 @@ const isMatch = require('./isMatch.js') // *** 10. Regular Expression Matching -
 const maxArea = require('./maxArea.js') // 11. Container With Most Water
 const intToRoman = require('./intToRoman.js') // 12. Integer to Roman
 const romanToInt = require('./romanToInt.js') // 13. Roman to Integer
+const longestCommonPrefix = require('./longestCommonPrefix.js') // 14. Longest Common Prefix
 
 module.exports = {
     twoSum,
@@ -26,5 +27,8 @@ module.exports = {
     isMatch,
     maxArea,
     intToRoman,
-    romanToInt
+    romanToInt,
+    longestCommonPrefix
 }
+
+longestCommonPrefix(["flower", "flow", "flight"])
