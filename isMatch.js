@@ -1,34 +1,49 @@
-var isMatch = function (s, p) {
-    let f = getPatternList(p)
-    let charArr = s.split('')
-    const queue = [patternList]
-    let char = charArr.shift()
+function isMatch(s, p, si = 0, pi = 0) {
+    if (s.length === 0 || p.length === 0) return true
+    if (s.length === si && p.length === pi) return true
+    if (p.length === pi) return false
+    const isZeroOnMore = p[pi + 1] === '*'
+    const isMathesAnySingle = p[pi] === '.'
+    const isSimpleCheckChar = !isZeroOnMore && !isMathesAnySingle
+    let delegateSi = si
+    let delegatepi = pi
 
-
-    return true
-};
-
-const getPatternList = (p) => {
-    let patternList = null
-    let currentPutternNode = null
-    for (let i = 0; i < p.length; i++) {
-        let pattern = { value: p[i], matches: [] }
-        if (p[i + +1] === '*') {
-            pattern.flag = true
-            i++
-        }
-
-        if (currentPutternNode) {
-            currentPutternNode.next = pattern
-            pattern.prev = currentPutternNode
-        }
-        if (!patternList) {
-            patternList = pattern
-        }
-        currentPutternNode = pattern
+    let result = false
+    if (isZeroOnMore) {
+        result = true
+        delegatepi = delegatepi + 2
+    } else if (isMathesAnySingle) {
+        result = typeof s[si] === 'string'
+        delegateSi++
+        delegatepi++
+    } else if (isSimpleCheckChar) {
+        result = s[si] === p[pi]
+        delegateSi++
+        delegatepi++
     }
-    return patternList
-}
+
+    let delegateResult = false
+
+    if (isSimpleCheckChar || isMathesAnySingle) {
+        delegateResult = isMatch(s, p, delegateSi, delegatepi)
+    }
+    if (isZeroOnMore) {
+        const queue = [{ si: delegateSi, pi: delegatepi }]
+        while (queue.length && delegateSi <= s.length) {
+            const cursors = queue.pop()
+            delegateResult = isMatch(s, p, cursors.si, cursors.pi)
+            if (!delegateResult) {
+                if (s[delegateSi] === p[pi] || (p[pi] === '.' && typeof s[delegateSi] === 'string')) {
+                    delegateSi++
+                    queue.push({ si: delegateSi, pi: delegatepi })
+                }
+            }
+        }
+    }
+
+    return result && delegateResult
+
+};
 
 
 module.exports = isMatch
