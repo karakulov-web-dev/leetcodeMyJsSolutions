@@ -12,7 +12,7 @@ const maxArea = require('./maxArea.js') // 11. Container With Most Water
 const intToRoman = require('./intToRoman.js') // 12. Integer to Roman
 const romanToInt = require('./romanToInt.js') // 13. Roman to Integer
 const longestCommonPrefix = require('./longestCommonPrefix.js') // 14. Longest Common Prefix
-const threeSum = require('./threeSum.js') // 15. 3Sum - Пока не решена ***
+const threeSum = require('./threeSum.js') // 15. 3Sum
 const removeDuplicates = require('./removeDuplicates.js') // 26. Remove Duplicates from Sorted Array
 
 module.exports = {
