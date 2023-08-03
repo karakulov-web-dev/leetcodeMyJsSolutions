@@ -13,7 +13,8 @@ const intToRoman = require('./intToRoman.js') // 12. Integer to Roman
 const romanToInt = require('./romanToInt.js') // 13. Roman to Integer
 const longestCommonPrefix = require('./longestCommonPrefix.js') // 14. Longest Common Prefix
 const threeSum = require('./threeSum.js') // 15. 3Sum
-const threeSumClosest = require('./threeSumClosest') // 16. 3Sum Closest
+const threeSumClosest = require('./threeSumClosest.js') // 16. 3Sum Closest
+const fourSum = require('./fourSum.js') // 18. 4Sum
 const removeDuplicates = require('./removeDuplicates.js') // 26. Remove Duplicates from Sorted Array
 
 module.exports = {
@@ -33,6 +34,7 @@ module.exports = {
     longestCommonPrefix,
     threeSum,
     threeSumClosest,
+    fourSum,
     removeDuplicates
 }
 
