@@ -15,6 +15,7 @@ const longestCommonPrefix = require('./longestCommonPrefix.js') // 14. Longest C
 const threeSum = require('./threeSum.js') // 15. 3Sum
 const threeSumClosest = require('./threeSumClosest.js') // 16. 3Sum Closest
 const fourSum = require('./fourSum.js') // 18. 4Sum
+const removeNthFromEnd = require('./removeNthFromEnd.js') // 19. Remove Nth Node From End of List
 const removeDuplicates = require('./removeDuplicates.js') // 26. Remove Duplicates from Sorted Array
 
 module.exports = {
@@ -35,7 +36,6 @@ module.exports = {
     threeSum,
     threeSumClosest,
     fourSum,
+    removeNthFromEnd,
     removeDuplicates
 }
-
-
